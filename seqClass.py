@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+## just trying to see if new comments are visible in GitHub
 
 import sys, re
 from argparse import ArgumentParser
@@ -29,6 +30,6 @@ if args.motif:
   args.motif = args.motif.upper()
   print(f'Motif search enabled: looking for motif "{args.motif}" in sequence "{args.seq}"... ', end = '')
   if re.match(args.motif, args.seq):
-    print("FOUND, YESSSS")
+    print("FOUND, YESSSS, PERFECT!")
   else:
     print("NOT FOUND, KEEP TRYING")
